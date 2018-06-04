@@ -16,12 +16,7 @@ class TicTacToe
     [6,4,2]]
     
   def play
-    until over?
-      if won?
-        break
-      else draw?
-        break
-      end
+    until won? || draw?
       turn
     end
     
