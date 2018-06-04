@@ -15,20 +15,15 @@ class TicTacToe
     [0,4,8],
     [6,4,2]]
     
-  
   def play
-    until over? 
-    if won?
-      break
-    else
+    until over?
       turn
     end
-    end
-    
-    if won?
+
+    if won? 
       puts "Congratulations #{winner}!"
     elsif draw?
-      puts "Cat's Game!"
+      puts "Cats Game!"
     end
   end
   
