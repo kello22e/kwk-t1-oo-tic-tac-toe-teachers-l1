@@ -17,9 +17,6 @@ class TicTacToe
     
   def play
     while over?
-      if won? || draw?
-        break
-      end
       turn
     end
     
