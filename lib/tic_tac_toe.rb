@@ -101,17 +101,9 @@ end
     end
   end
   
-  #full method
   def full?
-  index = 0
-  while index < @board.length
-    if @board[index] == " " then
-      return false
-    end
-    index += 1
-    end
-    return true
-  end
++    @board.all? { |i| i =="X" || i == "O"}
++  end
   
   
   #draw method
