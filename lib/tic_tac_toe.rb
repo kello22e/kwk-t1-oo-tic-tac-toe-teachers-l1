@@ -121,14 +121,10 @@ end
       return true
     end
   end
-  
+ 
   #over method
   def over?
-    if !(full?) == true
-      false
-    elsif won? || draw? || full?
-      true
-    end
+    won? || draw? || full? ? true : false
   end
 
   #winner method
@@ -156,3 +152,12 @@ end
 #   end
  #   return false
 # end
+
+#over method
+#  def over?
+ #   if !(full?) == true
+  #    false
+   ## elsif won? || draw? || full?
+    #  true
+    #end
+#  end
