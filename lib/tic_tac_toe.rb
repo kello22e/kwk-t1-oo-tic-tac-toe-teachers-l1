@@ -129,12 +129,10 @@ end
   
   #over method
   def over?
-    if !(full? && won?) == false
+    if !(full?) == true
       false
-    elsif won? || draw?
+    elsif won? || draw? || full?
       true
-    else
-      false
     end
   end
 
