@@ -159,3 +159,14 @@ end
 #     return true
 #    end
 #  end
+
+#full method
+#  def full?
+#  index = 0
+#  while index < @board.length
+#    if @board[index] == " " then
+#    end
+#   index += 1
+#    end
+    return true
+  end
