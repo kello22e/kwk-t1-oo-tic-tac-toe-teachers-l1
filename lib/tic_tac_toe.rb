@@ -101,9 +101,10 @@ end
     end
   end
   
+  #full method
   def full?
-+    @board.all? { |i| i =="X" || i == "O"}
-+  end
+    @board.all? { |i| i =="X" || i == "O"}
+  end
   
   
   #draw method
