@@ -18,6 +18,8 @@ class TicTacToe
   #play method
   def play
     until over?
+    if won? 
+      break
       turn
     end
   end
