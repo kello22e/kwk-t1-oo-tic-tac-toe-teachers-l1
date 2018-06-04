@@ -17,7 +17,7 @@ class TicTacToe
     
   #play method
   def play
-    until (over? || draw?)
+    until over?
       turn
     end
   end
