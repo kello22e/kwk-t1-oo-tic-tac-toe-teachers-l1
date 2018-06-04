@@ -15,15 +15,6 @@ class TicTacToe
     [0,4,8],
     [6,4,2]]
     
-  #play method
-  def play
-    until over?
-    if won? 
-      break
-    else 
-      turn
-    end
-  end
   
   def play
     until over? 
