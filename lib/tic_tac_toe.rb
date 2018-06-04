@@ -86,19 +86,19 @@ end
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
-  
-  #won method
-  def won?
-    WIN_COMBINATIONS.each do |win_combination|
-    position_1 = @board[win_combination[0]] 
-    position_2 = @board[win_combination[1]] 
-    position_3 = @board[win_combination[2]] 
-    if (position_1 == "X" && position_2 == "X" && position_3 == "X") ||(position_1 == "O" && position_2 == "O" && position_3 == "O")
-      return win_combination 
+   
+   board_empty = @board.none? { |i| i == "X" || i = "O"}
+    if board_empty
+      false
+    else 
+      WIN_COMBINATIONS.each do |combo| 
+        if @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2]] == "X" || @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
+          return combo
+        end
       end
-    end
-    return false
+      return false
   end
+end
   
   #full method
   def full?
