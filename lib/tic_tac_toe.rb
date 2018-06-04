@@ -87,7 +87,8 @@ end
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
    
-   board_empty = @board.none? { |i| i == "X" || i = "O"}
+   def won?
+     board_empty = @board.none? { |i| i == "X" || i = "O"}
     if board_empty
       false
     else 
