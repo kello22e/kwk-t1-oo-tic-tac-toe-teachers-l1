@@ -17,7 +17,11 @@ class TicTacToe
     
   def play
     until over?
-      turn
+      if won? || draw?
+        break
+      else
+        turn
+      end
     end
     
     if won?
