@@ -16,7 +16,7 @@ class TicTacToe
     [6,4,2]]
     
   def play
-    until (!(won?) == false) || draw?
+    until over? == true
       turn
     end
     
