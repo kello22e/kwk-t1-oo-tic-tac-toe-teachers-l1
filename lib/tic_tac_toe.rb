@@ -80,7 +80,7 @@ def turn
   if valid_move?(index)
     move(index,current_player)
   else
-    turn
+    turn and return
   end
   display_board
 end
