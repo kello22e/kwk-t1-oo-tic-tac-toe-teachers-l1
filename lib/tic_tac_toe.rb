@@ -62,7 +62,8 @@ end
 #input_to_index method
 def input_to_index(input)
   index = input.to_i - 1
-  move(index,player)
+  return index
+ # move(index,player)
 end
 
 #move method
