@@ -120,7 +120,7 @@ end
   
   #draw method
   def draw?
-    if won? || full?
+    if won?
       return false
     else
       return true
