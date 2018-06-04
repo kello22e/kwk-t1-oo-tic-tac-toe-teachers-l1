@@ -26,6 +26,7 @@ class TicTacToe
     until (over? || draw?)
       turn
     end
+    
     if won?
       puts "Congratulations #{winner}!"
     elsif draw?
