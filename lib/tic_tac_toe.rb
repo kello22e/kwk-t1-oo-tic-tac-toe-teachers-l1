@@ -113,13 +113,10 @@ end
     return true
   end
   
+  
   #draw method
-  def draw?
-    if won?
-      return false
-    else
-      return true
-    end
+ def draw?
+   !won? && full? ? true : false
   end
  
   #over method
@@ -160,4 +157,13 @@ end
    ## elsif won? || draw? || full?
     #  true
     #end
+#  end
+
+#draw method
+#  def draw?
+#    if won?
+#      return false
+#    else
+#     return true
+#    end
 #  end
