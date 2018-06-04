@@ -20,6 +20,7 @@ class TicTacToe
     until over?
     if won? 
       break
+    else 
       turn
     end
   end
