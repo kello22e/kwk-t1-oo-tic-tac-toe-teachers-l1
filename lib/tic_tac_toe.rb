@@ -98,8 +98,8 @@ end
         end
       end
       return false
+    end
   end
-end
   
   #full method
   def full?
